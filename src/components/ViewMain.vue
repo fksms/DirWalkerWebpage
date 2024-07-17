@@ -1,0 +1,168 @@
+<script setup>
+
+const msg_0_Header = "Visualize Disk Usage by Directory";
+const msg_0_Main = "This tool visualizes the usage of each directory. Utilizing the Tauri framework, it supports cross-platform operation. Binaries are available for Linux, macOS, and Windows.";
+
+const msg_1_Header = "Clear Visualization of Each File and Directory Size";
+const msg_1_Main = "Once the directory scan is complete, a sunburst chart is displayed. Larger files and directories are shown with larger areas, making it easy to identify the files and directories occupying your disk space. The scanning process is written in Rust, allowing for fast, multithreaded scanning.";
+
+const msg_2_Header = "Interactive";
+const msg_2_Main = "After the scan, three elements are displayed: the sunburst chart, a list of files and directories under the directory, and a breadcrumb list. Left-clicking updates the sunburst chart and list each time. Right-clicking allows you to open the corresponding directory in the OS's standard file manager or copy the path of the directory or file to the clipboard.";
+
+const msg_3_Header = "Customizable Scans";
+const msg_3_Main = "By default, the tool scans the OS's root directory. However, you can specify the directory you want to scan for faster scanning. You can also set multiple directories that you do not want to scan.";
+
+</script>
+
+<template>
+    <div class="bg-grey-lighten-5">
+
+        <div class="py-5"></div>
+
+        <!-- 0: xsの時に表示 -->
+        <v-container class="fixed-width-container d-sm-none">
+            <v-row class="align-center" justify="center">
+                <v-col cols="4">
+                    <v-img src="../../assets/DirWalker.png"></v-img>
+                </v-col>
+                <v-col cols="10">
+                    <div>
+                        <h2 class="center">{{ msg_0_Header }}</h2>
+                        <p>{{ msg_0_Main }}</p>
+                    </div>
+                </v-col>
+            </v-row>
+        </v-container>
+
+        <!-- 0: sm、md、lgの時に表示 -->
+        <v-container class="fixed-width-container d-none d-sm-block">
+            <v-row class="align-center" justify="center">
+                <v-col sm="2" md="2" lg="2">
+                    <v-img src="../../assets/DirWalker.png"></v-img>
+                </v-col>
+                <v-col sm="8" md="8" lg="8">
+                    <!-- 左側にパディング -->
+                    <div class="pl-10">
+                        <h2>{{ msg_0_Header }}</h2>
+                        <p>{{ msg_0_Main }}</p>
+                    </div>
+                </v-col>
+            </v-row>
+        </v-container>
+
+        <div class="py-10"></div>
+
+        <!-- 1: xs、smの時に表示 -->
+        <v-container class="fixed-width-container d-md-none">
+            <v-row class="align-center" justify="center">
+                <v-col cols="10" sm="10">
+                    <div>
+                        <h2 class="center">{{ msg_1_Header }}</h2>
+                        <p>{{ msg_1_Main }}</p>
+                    </div>
+                </v-col>
+                <v-col cols="12" sm="12">
+                    <v-img src="../../assets/Screenshot_2.png"></v-img>
+                </v-col>
+            </v-row>
+        </v-container>
+
+        <!-- 1: md、lgの時に表示 -->
+        <v-container class="fixed-width-container d-none d-md-block">
+            <v-row class="align-center" justify="center">
+                <v-col md="5" lg="5">
+                    <!-- 左側にパディング -->
+                    <div class="pl-10">
+                        <h2>{{ msg_1_Header }}</h2>
+                        <p>{{ msg_1_Main }}</p>
+                    </div>
+                </v-col>
+                <v-col md="7" lg="7">
+                    <v-img src="../../assets/Screenshot_2.png"></v-img>
+                </v-col>
+            </v-row>
+        </v-container>
+
+        <div class="py-5"></div>
+
+        <!-- 2: xs、smの時に表示 -->
+        <v-container class="fixed-width-container d-md-none">
+            <v-row class="align-center" justify="center">
+                <v-col cols="10" sm="10">
+                    <div>
+                        <h2 class="center">{{ msg_2_Header }}</h2>
+                        <p>{{ msg_2_Main }}</p>
+                    </div>
+                </v-col>
+                <v-col cols="12" sm="12">
+                    <v-img src="../../assets/Screenshot_3.png"></v-img>
+                </v-col>
+            </v-row>
+        </v-container>
+
+        <!-- 2: md、lgの時に表示 -->
+        <v-container class="fixed-width-container d-none d-md-block">
+            <v-row class="align-center" justify="center">
+                <v-col md="7" lg="7">
+                    <v-img src="../../assets/Screenshot_3.png"></v-img>
+                </v-col>
+                <v-col md="5" lg="5">
+                    <!-- 右側にパディング -->
+                    <div class="pr-10">
+                        <h2>{{ msg_2_Header }}</h2>
+                        <p>{{ msg_2_Main }}</p>
+                    </div>
+                </v-col>
+            </v-row>
+        </v-container>
+
+        <div class="py-5"></div>
+
+        <!-- 3: xs、smの時に表示 -->
+        <v-container class="fixed-width-container d-md-none">
+            <v-row class="align-center" justify="center">
+                <v-col cols="10" sm="10">
+                    <div>
+                        <h2 class="center">{{ msg_3_Header }}</h2>
+                        <p>{{ msg_3_Main }}</p>
+                    </div>
+                </v-col>
+                <v-col cols="12" sm="12">
+                    <v-img src="../../assets/Screenshot_1.png"></v-img>
+                </v-col>
+            </v-row>
+        </v-container>
+
+        <!-- 3: md、lgの時に表示 -->
+        <v-container class="fixed-width-container d-none d-md-block">
+            <v-row class="align-center" justify="center">
+                <v-col md="5" lg="5">
+                    <!-- 左側にパディング -->
+                    <div class="pl-10">
+                        <h2>{{ msg_3_Header }}</h2>
+                        <p>{{ msg_3_Main }}</p>
+                    </div>
+                </v-col>
+                <v-col md="7" lg="7">
+                    <v-img src="../../assets/Screenshot_1.png"></v-img>
+                </v-col>
+            </v-row>
+        </v-container>
+
+    </div>
+</template>
+
+<style>
+.fixed-width-container {
+    /* lg（1280px以上、1920px未満）のサイズで設定する */
+    max-width: 1400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h2.center {
+    text-align: center;
+}
+</style>

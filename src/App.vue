@@ -1,47 +1,30 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
+import ViewHeader from "./components/ViewHeader.vue";
+import ViewMain from "./components/ViewMain.vue";
+import ViewFooter from "./components/ViewFooter.vue";
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <v-app>
+        <v-app-bar class="bg-grey-lighten-4" height="80" elevation="0">
+            <ViewHeader></ViewHeader>
+        </v-app-bar>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+        <v-main>
+            <ViewMain></ViewMain>
+        </v-main>
 
-  <main>
-    <TheWelcome />
-  </main>
+        <v-footer>
+            <ViewFooter></ViewFooter>
+        </v-footer>
+    </v-app>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+:root {
+    /* フォントの指定 */
+    font-family: Avenir, YuGothic, 'Yu Gothic', Futura, 'Century Gothic', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 }
 </style>
