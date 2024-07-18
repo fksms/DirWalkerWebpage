@@ -11,7 +11,7 @@ const iconPath = import.meta.env.BASE_URL + "DirWalker.png";
 
 <template>
     <v-app>
-        <v-app-bar color="grey-lighten-3" height="80">
+        <v-app-bar color="grey-lighten-3" height="70">
             <ViewHeader :iconPath="iconPath"></ViewHeader>
         </v-app-bar>
 

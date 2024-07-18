@@ -16,14 +16,14 @@ npm install
 npm run dev
 ```
 
-### Compile and Preview for Production
-
-```sh
-npm run preview
-```
-
 ### Compile and Minify for Production
 
 ```sh
 npm run build
+```
+
+### Preview the compilation for production
+
+```sh
+npm run preview
 ```
