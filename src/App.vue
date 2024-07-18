@@ -4,20 +4,23 @@ import ViewHeader from "./components/ViewHeader.vue";
 import ViewMain from "./components/ViewMain.vue";
 import ViewFooter from "./components/ViewFooter.vue";
 
+// DirWalkerアイコンの場所
+const iconPath = import.meta.env.BASE_URL + "DirWalker.png";
+
 </script>
 
 <template>
     <v-app>
         <v-app-bar color="grey-lighten-3" height="80">
-            <ViewHeader></ViewHeader>
+            <ViewHeader :iconPath="iconPath"></ViewHeader>
         </v-app-bar>
 
         <v-main>
-            <ViewMain></ViewMain>
+            <ViewMain :iconPath="iconPath"></ViewMain>
         </v-main>
 
         <v-footer color="grey-lighten-3" height="200">
-            <ViewFooter></ViewFooter>
+            <ViewFooter :iconPath="iconPath"></ViewFooter>
         </v-footer>
     </v-app>
 </template>

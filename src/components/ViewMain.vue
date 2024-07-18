@@ -1,5 +1,19 @@
 <script setup>
 
+// 親から渡されたコンポーネントの参照を受け取る
+const props = defineProps({
+    iconPath: String
+})
+
+// Screenshot_1の場所
+const screenshotPath_1 = import.meta.env.BASE_URL + "Screenshot_1.png";
+
+// Screenshot_2の場所
+const screenshotPath_2 = import.meta.env.BASE_URL + "Screenshot_2.png";
+
+// Screenshot_3の場所
+const screenshotPath_3 = import.meta.env.BASE_URL + "Screenshot_3.png";
+
 const msg_0_Header = "Visualize Disk Usage by Directory";
 const msg_0_Main = "This tool visualizes the usage of each directory. Utilizing the Tauri framework, it supports cross-platform operation. Binaries are available for Linux, macOS, and Windows.";
 
@@ -23,7 +37,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
         <v-container class="fixed-width-container d-sm-none">
             <v-row class="align-center" justify="center">
                 <v-col cols="4">
-                    <v-img src="../../assets/DirWalker.png"></v-img>
+                    <v-img :src="iconPath"></v-img>
                 </v-col>
                 <v-col cols="10">
                     <div>
@@ -38,7 +52,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
         <v-container class="fixed-width-container d-none d-sm-block">
             <v-row class="align-center" justify="center">
                 <v-col sm="2" md="2" lg="2">
-                    <v-img src="../../assets/DirWalker.png"></v-img>
+                    <v-img :src="iconPath"></v-img>
                 </v-col>
                 <v-col sm="8" md="8" lg="8">
                     <!-- 左側にパディング -->
@@ -57,13 +71,13 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
             href="https://github.com/fksms/DirWalker/releases" width="200" target="_blank">
             <v-row class="pt-4">
                 <v-col class="d-flex justify-center" cols="4">
-                    <img src="../../assets/logo/Logo_Apple.svg" style="height: 35px;" />
+                    <img src="../assets/Logo_Apple.svg" style="height: 35px;" />
                 </v-col>
                 <v-col class="d-flex justify-center" cols="4">
-                    <img src="../../assets/logo/Logo_Windows.svg" style="height: 35px;" />
+                    <img src="../assets/Logo_Windows.svg" style="height: 35px;" />
                 </v-col>
                 <v-col class="d-flex justify-center" cols="4">
-                    <img src="../../assets/logo/Logo_Linux.svg" style="height: 35px;" />
+                    <img src="../assets/Logo_Linux.svg" style="height: 35px;" />
                 </v-col>
             </v-row>
             <v-card-title class="text-grey-darken-3">
@@ -83,7 +97,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
                     </div>
                 </v-col>
                 <v-col cols="12" sm="12">
-                    <v-img src="../../assets/Screenshot_2.png"></v-img>
+                    <v-img :src="screenshotPath_2"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -99,7 +113,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
                     </div>
                 </v-col>
                 <v-col md="7" lg="7">
-                    <v-img src="../../assets/Screenshot_2.png"></v-img>
+                    <v-img :src="screenshotPath_2"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -116,7 +130,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
                     </div>
                 </v-col>
                 <v-col cols="12" sm="12">
-                    <v-img src="../../assets/Screenshot_3.png"></v-img>
+                    <v-img :src="screenshotPath_3"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -125,7 +139,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
         <v-container class="fixed-width-container d-none d-md-block">
             <v-row class="align-center" justify="center">
                 <v-col md="7" lg="7">
-                    <v-img src="../../assets/Screenshot_3.png"></v-img>
+                    <v-img :src="screenshotPath_3"></v-img>
                 </v-col>
                 <v-col md="5" lg="5">
                     <!-- 右側にパディング -->
@@ -149,7 +163,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
                     </div>
                 </v-col>
                 <v-col cols="12" sm="12">
-                    <v-img src="../../assets/Screenshot_1.png"></v-img>
+                    <v-img :src="screenshotPath_1"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -165,7 +179,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
                     </div>
                 </v-col>
                 <v-col md="7" lg="7">
-                    <v-img src="../../assets/Screenshot_1.png"></v-img>
+                    <v-img :src="screenshotPath_1"></v-img>
                 </v-col>
             </v-row>
         </v-container>
