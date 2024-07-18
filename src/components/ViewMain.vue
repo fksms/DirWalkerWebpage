@@ -6,7 +6,7 @@ const msg_0_Main = "This tool visualizes the usage of each directory. Utilizing 
 const msg_1_Header = "Clear Visualization of Each File and Directory Size";
 const msg_1_Main = "Once the directory scan is complete, a sunburst chart is displayed. Larger files and directories are shown with larger areas, making it easy to identify the files and directories occupying your disk space. The scanning process is written in Rust, allowing for fast, multithreaded scanning.";
 
-const msg_2_Header = "Interactive";
+const msg_2_Header = "Interaction Design";
 const msg_2_Main = "After the scan, three elements are displayed: the sunburst chart, a list of files and directories under the directory, and a breadcrumb list. Left-clicking updates the sunburst chart and list each time. Right-clicking allows you to open the corresponding directory in the OS's standard file manager or copy the path of the directory or file to the clipboard.";
 
 const msg_3_Header = "Customizable Scans";
@@ -49,6 +49,27 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
                 </v-col>
             </v-row>
         </v-container>
+
+        <div class="py-2"></div>
+
+        <!-- ダウンロードボタン -->
+        <v-card color="amber" class="rounded-lg mx-auto d-flex flex-column align-center"
+            href="https://github.com/fksms/DirWalker/releases" width="200" target="_blank">
+            <v-row class="pt-4">
+                <v-col class="d-flex justify-center" cols="4">
+                    <img src="../../assets/logo/Logo_Apple.svg" style="height: 35px;" />
+                </v-col>
+                <v-col class="d-flex justify-center" cols="4">
+                    <img src="../../assets/logo/Logo_Windows.svg" style="height: 35px;" />
+                </v-col>
+                <v-col class="d-flex justify-center" cols="4">
+                    <img src="../../assets/logo/Logo_Linux.svg" style="height: 35px;" />
+                </v-col>
+            </v-row>
+            <v-card-title class="text-grey-darken-3">
+                <h4>Download</h4>
+            </v-card-title>
+        </v-card>
 
         <div class="py-10"></div>
 
@@ -148,6 +169,8 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
                 </v-col>
             </v-row>
         </v-container>
+
+        <div class="py-5"></div>
 
     </div>
 </template>

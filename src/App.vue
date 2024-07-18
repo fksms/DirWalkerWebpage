@@ -8,7 +8,7 @@ import ViewFooter from "./components/ViewFooter.vue";
 
 <template>
     <v-app>
-        <v-app-bar class="bg-grey-lighten-4" height="80" elevation="0">
+        <v-app-bar color="grey-lighten-3" height="80">
             <ViewHeader></ViewHeader>
         </v-app-bar>
 
@@ -16,7 +16,7 @@ import ViewFooter from "./components/ViewFooter.vue";
             <ViewMain></ViewMain>
         </v-main>
 
-        <v-footer>
+        <v-footer color="grey-lighten-3" height="200">
             <ViewFooter></ViewFooter>
         </v-footer>
     </v-app>

@@ -14,7 +14,7 @@
         <v-spacer></v-spacer>
 
         <a href="https://github.com/fksms/DirWalker">
-            <img src="../../assets/logo/Logo_GitHub.svg" style="height: 30px;" class="mr-15"></img>
+            <img src="../../assets/logo/Logo_GitHub.svg" style="height: 35px;" class="mr-15"></img>
         </a>
 
     </v-container>
