@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "vite-plugin-sitemap": "^0.6.2",
     "vite-plugin-vuetify": "^2.0.3",
     "vue": "^3.4.29",
     "vuetify": "^3.6.12"
