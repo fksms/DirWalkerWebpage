@@ -85,7 +85,16 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
             </v-card-title>
         </v-card>
 
-        <div class="py-10"></div>
+        <div class="py-2"></div>
+
+        <!-- アプリバッジ（Microsoft Store） -->
+        <v-container class="d-flex flex-column align-center">
+            <a href="https://apps.microsoft.com/detail/9nxz7km9m483">
+                <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" />
+            </a>
+        </v-container>
+
+        <div class="py-4"></div>
 
         <!-- 1: xs、smの時に表示 -->
         <v-container class="fixed-width-container d-md-none">
