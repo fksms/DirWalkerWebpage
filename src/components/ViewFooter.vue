@@ -16,7 +16,7 @@ const props = defineProps({
             </v-row>
         </a>
         <p class="pt-7 pb-0">The MIT License</p>
-        <p class="pt-0 pb-3">Copyright © 2024 Shogo Fukushima</p>
+        <p class="pt-0 pb-3">Copyright © 2025 Shogo Fukushima</p>
         <a href="https://github.com/fksms/DirWalker">
             <img src="../assets/Logo_GitHub.svg" style="height: 30px;"></img>
         </a>
