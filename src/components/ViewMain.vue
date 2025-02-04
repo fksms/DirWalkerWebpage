@@ -6,13 +6,13 @@ const props = defineProps({
 })
 
 // Screenshot_1の場所
-const screenshotPath_1 = import.meta.env.BASE_URL + "Screenshot_1.png";
+const screenshotPath_1 = import.meta.env.BASE_URL + "Screenshot_1.webp";
 
 // Screenshot_2の場所
-const screenshotPath_2 = import.meta.env.BASE_URL + "Screenshot_2.png";
+const screenshotPath_2 = import.meta.env.BASE_URL + "Screenshot_2.webp";
 
 // Screenshot_3の場所
-const screenshotPath_3 = import.meta.env.BASE_URL + "Screenshot_3.png";
+const screenshotPath_3 = import.meta.env.BASE_URL + "Screenshot_3.webp";
 
 const msg_0_Header = "Visualize Disk Usage by Directory";
 const msg_0_Main = "This tool visualizes the usage of each directory. Utilizing the Tauri framework, it supports cross-platform operation. Binaries are available for Linux, macOS, and Windows.";
