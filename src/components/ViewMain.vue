@@ -71,13 +71,13 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
             href="https://github.com/fksms/DirWalker/releases" width="200" target="_blank">
             <v-row class="pt-4">
                 <v-col class="d-flex justify-center" cols="4">
-                    <img src="../assets/Logo_Apple.svg" style="height: 35px;" />
+                    <img src="../assets/Logo_Apple.svg" style="height: 35px;" alt="MacOS" />
                 </v-col>
                 <v-col class="d-flex justify-center" cols="4">
-                    <img src="../assets/Logo_Windows.svg" style="height: 35px;" />
+                    <img src="../assets/Logo_Windows.svg" style="height: 35px;" alt="Windows" />
                 </v-col>
                 <v-col class="d-flex justify-center" cols="4">
-                    <img src="../assets/Logo_Linux.svg" style="height: 35px;" />
+                    <img src="../assets/Logo_Linux.svg" style="height: 35px;" alt="Linux" />
                 </v-col>
             </v-row>
             <v-card-title class="text-grey-darken-3">
@@ -90,7 +90,7 @@ const msg_3_Main = "By default, the tool scans the OS's root directory. However,
         <!-- アプリバッジ（Microsoft Store） -->
         <v-container class="d-flex flex-column align-center">
             <a href="https://apps.microsoft.com/detail/9nxz7km9m483">
-                <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" />
+                <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" alt="Microsoft Store" />
             </a>
         </v-container>
 
