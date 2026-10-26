@@ -1,6 +1,6 @@
 <template>
     <v-container fluid class="flex-column align-center d-flex text-center">
-        <a href="/">
+        <a href="https://fksms.github.io/DirWalker/">
             <v-row class="align-center" href="">
                 <img src="/DirWalker.png" style="height: 40px" alt="DirWalker" />
                 <h3 class="mx-3 mt-1">DirWalker</h3>

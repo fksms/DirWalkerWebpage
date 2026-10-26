@@ -1,7 +1,7 @@
 <template>
     <!-- xsの時に表示 -->
     <v-container fluid class="flex-row align-center d-flex d-sm-none">
-        <a href="/">
+        <a href="https://fksms.github.io/DirWalker/">
             <v-row class="align-center ml-3" href="">
                 <img src="/DirWalker.png" style="height: 40px" alt="DirWalker" />
                 <h3 class="mx-3 mt-1">DirWalker</h3>
@@ -17,7 +17,7 @@
 
     <!-- sm以上の時に表示 -->
     <v-container fluid class="flex-row align-center d-none d-sm-flex">
-        <a href="/">
+        <a href="https://fksms.github.io/DirWalker/">
             <v-row class="align-center ml-15" href="">
                 <img src="/DirWalker.png" style="height: 40px" alt="DirWalker" />
                 <h3 class="mx-3 mt-1">DirWalker</h3>

@@ -5,12 +5,12 @@ import { defineConfig } from 'vite';
 import sitemap from 'vite-plugin-sitemap';
 import vuetify from 'vite-plugin-vuetify';
 
-const hostname = 'https://fksms.github.io/';
+const hostname = 'https://fksms.github.io/DirWalker/';
 const route = '/DirWalker/';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [vue(), vuetify(), sitemap({ hostname: hostname, dynamicRoutes: [route] })],
+    plugins: [vue(), vuetify(), sitemap({ hostname: hostname, dynamicRoutes: [route], exclude: ['/'] })],
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
