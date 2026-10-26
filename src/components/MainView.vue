@@ -1,4 +1,6 @@
 <script setup>
+const base = import.meta.env.BASE_URL;
+
 const msg_0_Header = 'Visualize Disk Usage by Directory';
 const msg_0_Main = 'This tool visualizes the usage of each directory. Utilizing the Tauri framework, it supports cross-platform operation. Binaries are available for Linux, macOS, and Windows.';
 
@@ -23,7 +25,7 @@ const msg_3_Main =
         <v-container class="fixed-width-container d-sm-none">
             <v-row class="align-center" justify="center">
                 <v-col cols="4">
-                    <v-img src="/DirWalker.png"></v-img>
+                    <v-img :src="`${base}DirWalker.png`"></v-img>
                 </v-col>
                 <v-col cols="10">
                     <div>
@@ -38,7 +40,7 @@ const msg_3_Main =
         <v-container class="fixed-width-container d-none d-sm-block">
             <v-row class="align-center" justify="center">
                 <v-col sm="2" md="2" lg="2">
-                    <v-img src="/DirWalker.png"></v-img>
+                    <v-img :src="`${base}DirWalker.png`"></v-img>
                 </v-col>
                 <v-col sm="8" md="8" lg="8">
                     <!-- 左側にパディング -->
@@ -91,7 +93,7 @@ const msg_3_Main =
                     </div>
                 </v-col>
                 <v-col cols="12" sm="12">
-                    <v-img src="/Screenshot_2.webp"></v-img>
+                    <v-img :src="`${base}Screenshot_2.webp`"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -107,7 +109,7 @@ const msg_3_Main =
                     </div>
                 </v-col>
                 <v-col md="7" lg="7">
-                    <v-img src="/Screenshot_2.webp"></v-img>
+                    <v-img :src="`${base}Screenshot_2.webp`"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -124,7 +126,7 @@ const msg_3_Main =
                     </div>
                 </v-col>
                 <v-col cols="12" sm="12">
-                    <v-img src="/Screenshot_3.webp"></v-img>
+                    <v-img :src="`${base}Screenshot_3.webp`"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -133,7 +135,7 @@ const msg_3_Main =
         <v-container class="fixed-width-container d-none d-md-block">
             <v-row class="align-center" justify="center">
                 <v-col md="7" lg="7">
-                    <v-img src="/Screenshot_3.webp"></v-img>
+                    <v-img :src="`${base}Screenshot_3.webp`"></v-img>
                 </v-col>
                 <v-col md="5" lg="5">
                     <!-- 右側にパディング -->
@@ -157,7 +159,7 @@ const msg_3_Main =
                     </div>
                 </v-col>
                 <v-col cols="12" sm="12">
-                    <v-img src="/Screenshot_1.webp"></v-img>
+                    <v-img :src="`${base}Screenshot_1.webp`"></v-img>
                 </v-col>
             </v-row>
         </v-container>
@@ -173,7 +175,7 @@ const msg_3_Main =
                     </div>
                 </v-col>
                 <v-col md="7" lg="7">
-                    <v-img src="/Screenshot_1.webp"></v-img>
+                    <v-img :src="`${base}Screenshot_1.webp`"></v-img>
                 </v-col>
             </v-row>
         </v-container>
